@@ -11,8 +11,8 @@
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
     <!-- Script for our application  -->
-    
-    <script src="demo.js"> </script>
+    <link rel="stylesheet" href="spa_app.css">
+    <script src="02_app_demo.js"> </script>
 
   </head>
   <body>
@@ -44,15 +44,7 @@
       <div class="row">
           <div class="col">
             <div>
-              <span> Please enter in your first and last name then click on start to begin the app</span>
-              
-              <form>
-              <label for="fname">First name:</label><br>
-              <input type="text" id="fname" name="fname" value="">{{this.name}}<br>
-              <label for="lname">Last name:</label><br>
-              <input type="text" id="lname" name="lname" value="">{{this.name2}}<br><br>
-              </form> 
-              
+              <span> Press start to begin the app</span>
               <button class="btn btn-danger float-right" data-action="{{this.action}}">{{this.action}}</button>
             </div>
           </div>
@@ -101,13 +93,12 @@
       </div>
   </script>
 
-  <script id="end_view " type="text/x-handlebars-template">
+  <script id="end_view" type="text/x-handlebars-template">
       <div class="container">
         <div class="row">
             <div class="col">
               <div>
-                <span> Thank you for taking the quiz </span>
-                <h4>{{this.name}}</h4>
+                <span> Thank you for taking the quiz</span>
                 <button class="btn btn-danger float-right" data-action="start_again">Start Again</button>
               </div>
             </div>
