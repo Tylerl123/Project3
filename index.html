@@ -44,7 +44,16 @@
       <div class="row">
           <div class="col">
             <div>
-              <span> Press start to begin the app</span>
+              <span> Type in first and last name then click start to begin the Quiz</span>
+              
+              <form>
+              <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname" value=""><br>
+              <label for="lname">Last name:</label><br>
+              <input type="text" id="lname" name="lname" value=""><br><br>
+              
+              </form> 
+              
               <button class="btn btn-danger float-right" data-action="{{this.action}}">{{this.action}}</button>
             </div>
           </div>
