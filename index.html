@@ -44,7 +44,15 @@
       <div class="row">
           <div class="col">
             <div>
-              <span> Press start to begin the app</span>
+              <span> Please enter in your first and last name then click on start to begin the app</span>
+              
+              <form>
+              <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname" value=""><br>
+              <label for="lname">Last name:</label><br>
+              <input type="text" id="lname" name="lname" value=""><br><br>
+              </form> 
+              
               <button class="btn btn-danger float-right" data-action="{{this.action}}">{{this.action}}</button>
             </div>
           </div>
@@ -93,12 +101,12 @@
       </div>
   </script>
 
-  <script id="end_view" type="text/x-handlebars-template">
+  <script id="end_view fname" type="text/x-handlebars-template">
       <div class="container">
         <div class="row">
             <div class="col">
               <div>
-                <span> Thank you for taking the quiz</span>
+                <span> Thank you for taking the quiz "#fname"</span>
                 <button class="btn btn-danger float-right" data-action="start_again">Start Again</button>
               </div>
             </div>
