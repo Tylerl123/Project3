@@ -102,6 +102,9 @@ function handle_widget_event(e) {
   
        <h3  >  ${first}  </h3> <br>
        `;
+       
+      const.innerHTML = firsts
+      
         if (e.target.dataset.action == "start_again") {
           appState.current_view =  "#intro_view";
           appState.current_model = {
