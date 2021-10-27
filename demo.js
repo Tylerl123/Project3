@@ -106,7 +106,7 @@ function handle_widget_event(e) {
       const innerHTML = firsts
       
         if (e.target.dataset.action == "start_again") {
-          appState.current_view =  "#intro_view fname";
+          appState.current_view =  "#intro_view ";
           appState.current_model = {
             action : "start_app"
           }
