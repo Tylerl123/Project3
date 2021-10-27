@@ -46,9 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
 function handle_widget_event(e) {
 
   if (appState.current_view == "#intro_view"){
-     let first = document.querySelector('#fname').value;
-     let last = document.querySelector('#lname').value;
-    
     if (e.target.dataset.action == "start_app") {
 
         // Update State (current model + state variables)
@@ -96,17 +93,9 @@ function handle_widget_event(e) {
     }
 
     // Handle answer event for  text questions.
-    if (appState.current_view == "#end_view ") {
-       let first = document.querySelector('#fname').value;
-       let firsts = `
-  
-       <h3  >  ${first}  </h3> <br>
-       `;
-       
-      const innerHTML = firsts
-      
+    if (appState.current_view == "#end_view") {
         if (e.target.dataset.action == "start_again") {
-          appState.current_view =  "#intro_view ";
+          appState.current_view =  "#intro_view";
           appState.current_model = {
             action : "start_app"
           }
