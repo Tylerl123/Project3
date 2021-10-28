@@ -37,8 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
   //
 
   document.querySelector("#widget_view").onclick = (e) => {
-      let f_name = document.querySelector('#fname');
-      
       handle_widget_event(e)
   }
 });
@@ -47,6 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function handle_widget_event(e) {
 
+   let f_name = document.querySelector('#fname').value;
+  
   if (appState.current_view == "#intro_view"){
     if (e.target.dataset.action == "start_app") {
 
