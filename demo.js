@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //
 
   document.querySelector("#widget_view").onclick = (e) => {
-      let f_name = document.querySelector('#fname').value;
+      let f_name = document.querySelector('#fname');
       
       handle_widget_event(e)
   }
