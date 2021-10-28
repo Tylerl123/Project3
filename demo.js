@@ -96,7 +96,7 @@ function handle_widget_event(e) {
     // Handle answer event for  text questions.
     if (appState.current_view == "#end_view") {
       let f_name = document.querySelector('#fname').value;
-      alert('fname');
+      alert("f_name");
         if (e.target.dataset.action == "start_again") {
           appState.current_view =  "#intro_view";
           appState.current_model = {
