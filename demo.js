@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //
 
   document.querySelector("#widget_view").onclick = (e) => {
+    
       handle_widget_event(e)
   }
 });
@@ -94,6 +95,8 @@ function handle_widget_event(e) {
 
     // Handle answer event for  text questions.
     if (appState.current_view == "#end_view") {
+      let f_name = document.querySelector('#fname').value;
+      alert('fname');
         if (e.target.dataset.action == "start_again") {
           appState.current_view =  "#intro_view";
           appState.current_model = {
