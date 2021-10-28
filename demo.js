@@ -45,9 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function handle_widget_event(e) {
 
-   let f_name = document.querySelector('#fname').value;
-  
   if (appState.current_view == "#intro_view"){
+    
+     let f_name = document.querySelector('#fname').value;
+    
     if (e.target.dataset.action == "start_app") {
 
         // Update State (current model + state variables)
