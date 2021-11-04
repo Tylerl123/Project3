@@ -1,1 +1,370 @@
+{
+    "quiz_one" : [
+        
+        {
+            "id" : 1,
+            "question" : "Which of the following is NOT an object oriented programming language?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "C",
+            "choices" : ["Java","C++","C","C#"],
+            "feedback" : ["Correct!", "Incorrect!"],
+            
+        },
+        {
+            "id" : 2,
+            "question" : "What is the number of primitive data types in Java?",
+            "question_type" : "question_input_text",
+            "textFieldId" : "user_answer",
+            "correct_answer" : "8",
+            "feedback" : ["Correct!", "Incorrect!"],
+           
+        },
+        {
+            "id" : 3,
+            "question" : "What is the keyword used to declare constants in Javascript?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "const",
+            "choices" : ["final","constant", "var", "const"],
+            "feedback" : ["Correct!", "Incorrect!"],
+              
+        },
+        {
+            "id" : 4,
+            "question" : "In Javascript, == checks for the equality in variable types and === checks for equality in variable values.",
+            "question_type" : "question_trueFalse",
+            "correct_answer" : "False",
+            "choices" : ["True", "False"],
+            "feedback" : ["Correct!", "Incorrect!"],
+           
+        },
+        {
+            "id" : 5,
+            "question" : "Which of the following statements regarding an object is true?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "An object is an instance of a class",
+            "choices" : ["An object is an instance of a class","An object is a variable","An object is a reference to an attribute","None of the above"],
+            "feedback" : ["Correct!", "Incorrect!"],
+            
+        },
+        {
+            "id" : 6,
+            "question" : "What is it called, when a class is extending an existing class?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "Inheritance",
+            "choices" : ["Polymorphism", "Abstraction", "Constructors", "Inheritance"],
+            "feedback" : ["Correct!", "Incorrect!"],
+            
+        },
+        {
+            "id" : 7,
+            "question" : "The process of wrapping up data and functions into a single unit is called Polymorphism.",
+            "question_type" : "question_trueFalse",
+            "correct_answer" : "False",
+            "choices" : ["True","False"],
+            "feedback" : ["Correct!", "Incorrect!"],
+            
+        },
+        {
+            "id" : 8,
+            "question" : "Which of the following is used to find and resolve bugs in Java?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "JDB",
+            "choices" : ["JRE", "JDK", "JDB", "JVM"],
+            "feedback" : ["Correct!", "Incorrect!"],
+           
+        },
+        {
+            "id" : 9,
+            "question" : "In Java, what is the keyword used to access features of a package?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "import",
+            "choices" : ["from","import","package","extends"],
+            "feedback" : ["Correct!", "Incorrect!"],
+           
+        },
+        {
+            "id" : 10,
+            "question" : "What does JAR stand for in the context of Java?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "Java ARchive",
+            "choices" : ["Java Archive Runner", "Java ARchive", "Java Application Runner", "None of the above"],
+            "feedback" : ["Correct!", "Incorrect!"],
+           
+        },
+        {
+            "id" : 11,
+            "question" : "In Python, which of following are NOT considered a core data type?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "Class",
+            "choices" : ["Dictionary","Tuples","Class","Lists"],
+            "feedback" : ["Correct!", "Incorrect!"],
+           
+        },
+        {
+            "id" : 12,
+            "question" : "In Python, which of the following operators are used for floor division?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "//",
+            "choices" : ["%",".floor()", "/", "//"],
+            "feedback" : ["Correct!", "Incorrect!"],
+            
+        },
+        {
+            "id" : 13,
+            "question" : "Which of the following data structures prohibit repeated elements?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "Set",
+            "choices" : ["ArrayList","List","Set","Binary Tree"],
+            "feedback" : ["Correct!", "Incorrect!"],
+           
+        },
+        {
+            "id" : 14,
+            "question" : "Select the data structures that are considered as non-linear data structures.",
+            "question_type" : "mult_select_choice",
+            "correct_answers" : ["Graph", "Binary Tree"],
+            "choices" : ["Queue","Graph","Linked List","Binary Tree"],
+            "feedback" : ["Correct!", "Incorrect!"],
+           
+        },
+        {
+            "id" : 15,
+            "question" : "What is the output of the code snippet below?",
+            "question_type" : "image_analysis",
+            "image" : "images/image_analysis01.png",
+            "correct_answer" : "Cimpletd",
+            "choices" : ["Cimpletd","Completed","Iomplede","Coipletd"],
+            "feedback" : ["Correct!", "Incorrect!"],
+            
+        },
+        {
+            "id" : 16,
+            "question" : "Which of the following is the correct way to initialize a List in Java?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "List<Integer> test = new ArrayList<Integer>();",
+            "choices" : ["List<Integer> test = Collection.newList();","List<String> test = List<String>();","List<Integer> test = new ArrayList<Integer>();","list = []"],
+            "feedback" : ["Correct!", "Incorrect!"],
+            
+        },
+        {
+            "id" : 17,
+            "question" : "In Java, what is the maximum size for the int data type?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "32-bits",
+            "choices" : ["16-bits", "28-bits", "32-bits", "64-bits"],
+            "feedback" : ["Correct!", "Incorrect!"],
+           
+        },
+        {
+            "id" : 18,
+            "question" : "In Java, without any class instances, a non-static method can be called by a static method.",
+            "question_type" : "question_trueFalse",
+            "correct_answer" : "False",
+            "choices" : ["True", "False"],
+            "feedback" : ["Correct!", "Incorrect!"],
+            
+        },
+        {
+            "id" : 19,
+            "question" : "What would be cause for an ArrayIndexOutOfBounds exception?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "Accessing an array with an illegal index",
+            "choices" : ["Referencing an array that doesn't exist", "Adding additional indexes to an array", "Accessing an array with an illegal index", "All of the above"],
+            "feedback" : ["Correct!", "Incorrect!"],
+        },
+        {
+            "id" : 20,
+            "question" : "Which of the following sorting algorithms have the worst time complexity in the worst case scenario?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "Bubble Sort",
+            "choices" : ["Merge Sort", "Bubble Sort", "Quick Sort", "Heap Sort"],
+            "feedback" : ["Correct!", "Incorrect!"], 
+           
+        }
+    ],
+
+    "quiz_two" : [
+        {
+            "id" : 1,
+            "question" : "What does API stand for?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "Application Programming Interface",
+            "choices" : ["Application Programming Intersection", "Asynchronous Program Interface", "Application Programming Interface", "None of the above"],
+            "feedback" : ["Correct!", "Incorrect!"], 
+        },
+        {
+            "id" : 2,
+            "question" : "How many ways can CSS styling be added into an HTML page?",
+            "question_type" : "question_input_text",
+            "textFieldId" : "user_answer",
+            "correct_answer" : "3",   
+            "feedback" : ["Correct!", "Incorrect!"],
+            
+        },
+        {
+            "id" : 3,
+            "question" : "Considering the section of an HTML page below, what is the proper CSS styling to center the text?",
+            "question_type" : "image_analysis",
+            "image" : "images/image_analysis02.png",
+            "correct_answer" : "text-align: center;",
+            "choices" : ["text-position: center;", "text-style: center;", "text-align: center;", "text-display: center;"],
+            "feedback" : ["Correct!", "Incorrect!"],
+            
+        },
+        {
+            "id" : 4,
+            "question" : "What is the correct tag to use when referencing a Javascript file in an HTML file?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "<script>",
+            "choices" : ["<file>","<js>","<src>","<script>"],
+            "feedback" : ["Correct!", "Incorrect!"],
+        },   
+        {
+            "id" : 5,
+            "question" : "What is the correct HTML attribute to use when referencing a link?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "href",
+            "choices" : ["link", "src", "anchor", "href"],
+            "feedback" : ["Correct!", "Incorrect!"], 
+           
+        },
+        {
+            "id" : 6,
+            "question" : "An HTTP 404 error indicates that the server the browser is communicating to cannot find what was being requested.",
+            "question_type" : "question_trueFalse",
+            "correct_answer" : "True",
+            "choices" : ["True", "False"],
+            "feedback" : ["Correct!", "Incorrect!"],
+            
+        },
+        {
+            "id" : 7,
+            "question" : "An HTML page is read and rendered by what?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "Web Browser",
+            "choices" : ["Server", "Interpreter", "Compiler", "Web Browser"],
+            "feedback" : ["Correct!", "Incorrect!"], 
+            
+        },
+        {
+            "id" : 8,
+            "question" : "The heading tag is defined as <hx>, where x is a number that indicates that the heading size gets larger as the number gets larger.",
+            "question_type" : "question_trueFalse",
+            "correct_answer" : "False",
+            "choices" : ["True", "False"],
+            "feedback" : ["Correct!", "Incorrect!"],
+           
+        },
+        {
+            "id" : 9,
+            "question" : "What is the name of the location address of hypertext documents?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "Uniform Resource Locator",
+            "choices" : ["Web Address", "Web Server", "Uniform Resource Locator", "File Directory"],
+            "feedback" : ["Correct!", "Incorrect!"], 
+            
+        },
+        {
+            "id" : 10,
+            "question" : "Which tag is used to manipulate the display of the titvle bar of a web page?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "<title>",
+            "choices" : ["<title>", "<head>", "<meta>", "<body>"],
+            "feedback" : ["Correct!", "Incorrect!"],
+           
+        },
+        {
+            "id" : 11,
+            "question" : "What are the two aspects that make up a style tag?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "Selector and Property",
+            "choices" : ["Tag and Class", "Selector and Property", "Name and Content", "ID and Class"],
+            "feedback" : ["Correct!", "Incorrect!"], 
+            
+        },
+        {
+            "id" : 12,
+            "question" : "What is the name of the communication protocol that is used to transfer hypertext documents?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "Hyper Text Transfer Protocol",
+            "choices" : ["Internet Protocol", "Hyper Text Transfer Protocol", "Hyper Text Internet Protocol", "File Transfer Protocol"],
+            "feedback" : ["Correct!", "Incorrect!"],
+            
+        },
+        {
+            "id" : 13,
+            "question" : "What is the name of the process where you transfer your HTML content from machine to server?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "Hosting",
+            "choices" : ["Transfering", "Indexing", "Hosting", "Serving"],
+            "feedback" : ["Correct!", "Incorrect!"],
+            
+        },
+        {
+            "id" : 14,
+            "question" : "What is the tag that is used to contain a collection of controls in an HTML page?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "<form>",
+            "choices" : ["<ul>","<ol>","<form>", "<li>"],
+            "feedback" : ["Correct!", "Incorrect!"],
+           
+        },
+        {
+            "id" : 15,
+            "question" : "Which of the following is NOT a CSS framework?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "jQuery",
+            "choices" : ["Bootstrap", "jQuery", "Tailwind", "Tachyons"],
+            "feedback" : ["Correct!", "Incorrect!"], 
+            
+        },
+        {
+            "id" : 16,
+            "question" : "MongoDB, CouchDB and Microsoft SQL Server are examples of strictly NoSQL databases",
+            "question_type" : "question_trueFalse",
+            "correct_answer" : "False",
+            "choices" : ["True", "False"],
+            "feedback" : ["Correct!", "Incorrect!"],
+           
+        },
+        {
+            "id" : 17,
+            "question" : "How is a function declared in Javascript?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "function",
+            "choices" : ["let", "func", "def", "function"],
+            "feedback" : ["Correct!", "Incorrect!"], 
+           
+        },
+        {
+            "id" : 18,
+            "question" : "What does JSON stand for?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "JavaScript Object Notation",
+            "choices" : ["Java Server Object Node", "JavaScript Object Notation", "JavaScript Output Name", "Java Standard Output Network"],
+            "feedback" : ["Correct!", "Incorrect!"],
+            
+        },
+        {
+            "id" : 19,
+            "question" : "What is the proper method of defining a key-value pairs in JSON objects?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "\"Name\" : \"Value\"",
+            "choices" : ["\"Name\" -> \"Value\"", "\"Name\" : \"Value\"", "\"Name\" = \"Value\"", "\"Name\" == \"Value\""],
+            "feedback" : ["Correct!", "Incorrect!"],
+            
+        },
+        {
+            "id" : 20,
+            "question" : "Which of the following input types allow users to select only one of the options displayed?",
+            "question_type" : "mult_choice_text",
+            "correct_answer" : "Radio Button",
+            "choices" : ["Radio Button", "Text Field", "Check Boxes", "Submit Button"],
+            "feedback" : ["Correct!", "Incorrect!"], 
+            
+        }
+
+    ]
+
+}
 
