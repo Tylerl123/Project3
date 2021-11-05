@@ -26,6 +26,15 @@ const fetch_data = async () => {
   //const html_element = template_view(module, '#view_intro')
    display(module);
   }
+
+ function display(module) {
+    let quiz_text = module.questions[6].question;
+    let quiz_type = module.questions[6].question_type;
+    let quiz_answer = module.questions[6].correct_answer;
+    let quiz_options = module.questions[6].choices;
+    let HTMLstring = `<h3> ${quiz_text} <br> </h3> <h4> Type: ${quiz_type} <br> answer: ${quiz_answer} <br> ${quiz_options} </h4>`;
+    document.querySelector("#showdata").innerHTML = HTMLstring;
+  }
 //
 // start_app: begin the applications.
 //
