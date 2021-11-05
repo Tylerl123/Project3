@@ -31,13 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
   fetch_info(1);
   
-  const fetch_info = async () => {
-  const data = await fetch("https://my-json-server.typicode.com/Tylerl123/Project3")
-  const result = await data.json()
- 
-  
-  }
-  
   // Set the state
   appState.current_view =  "#intro_view";
   appState.current_model = {
@@ -56,7 +49,12 @@ document.addEventListener('DOMContentLoaded', () => {
   
 });
 
-
+ const fetch_info = async () => {
+  const data = await fetch("https://my-json-server.typicode.com/Tylerl123/Project3")
+  const result = await data.json()
+ 
+  
+  }
 
 function handle_widget_event(e) {
 
