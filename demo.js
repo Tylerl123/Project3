@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
  const fetch_info = async () => {
-  const data = await fetch("https://my-json-server.typicode.com/Tylerl123/Project3")
+  const data = await fetch("https://my-json-server.typicode.com/Tylerl123/Project3/db")
   const result = await data.json()
  
   
