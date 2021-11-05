@@ -20,12 +20,7 @@ const appState = {
     current_model : {}
 }
 
-const fetch_data = async () => {
-  const data = await fetch("https://my-json-server.typicode.com/Tylerl123/Project3")
-  const module = await data.json()
-  //const html_element = template_view(module, '#view_intro')
-   display(module);
-  }
+
 
 
 //
@@ -35,6 +30,13 @@ const fetch_data = async () => {
 document.addEventListener('DOMContentLoaded', () => {
   
   fetch_data(1);
+  
+  const fetch_data = async () => {
+  const data = await fetch("https://my-json-server.typicode.com/Tylerl123/Project3")
+  const module = await data.json()
+  //const html_element = template_view(module, '#view_intro')
+   display(module);
+  }
   
   // Set the state
   appState.current_view =  "#intro_view";
