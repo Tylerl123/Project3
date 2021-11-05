@@ -21,25 +21,21 @@ const appState = {
 }
 
 const fetch_data = async () => {
-  const data = await fetch("https://github.com/Tylerl123/Project3/blob/[main|master]/db.json")
+  const data = await fetch("https://my-json-server.typicode.com/Tylerl123/Project3")
   const module = await data.json()
   //const html_element = template_view(module, '#view_intro')
    display(module);
   }
 
- function display(module) {
-    let quiz_text = module.questions[6].question;
-    let quiz_type = module.questions[6].question_type;
-    let quiz_answer = module.questions[6].correct_answer;
-    let quiz_options = module.questions[6].choices;
-    let HTMLstring = `<h3> ${quiz_text} <br> </h3> <h4> Type: ${quiz_type} <br> answer: ${quiz_answer} <br> ${quiz_options} </h4>`;
-    document.querySelector("#showdata").innerHTML = HTMLstring;
-  }
+
 //
 // start_app: begin the applications.
 //
 
 document.addEventListener('DOMContentLoaded', () => {
+  
+  fetch_data(1);
+  
   // Set the state
   appState.current_view =  "#intro_view";
   appState.current_model = {
