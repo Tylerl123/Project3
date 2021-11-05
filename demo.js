@@ -20,6 +20,12 @@ const appState = {
     current_model : {}
 }
 
+const fetch_data = async () => {
+  const data = await fetch("https://github.com/Tylerl123/Project3/blob/[main|master]/db.json")
+  const module = await data.json()
+  //const html_element = template_view(module, '#view_intro')
+   display(module);
+  }
 //
 // start_app: begin the applications.
 //
@@ -40,12 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
       handle_widget_event(e)
   }
   
-  const fetch_data = async () => {
-  const data = await fetch("https://github.com/Tylerl123/Project3/blob/[main|master]/db.json")
-  const module = await data.json()
-  //const html_element = template_view(module, '#view_intro')
-   display(module);
-  }
+  
 });
 
 
