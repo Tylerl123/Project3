@@ -66,7 +66,7 @@
       <div class="row">
           <div class="col">
             <div>
-              <span style="text-align:center"> {{this.questionText}}</span>
+              <span style="text-align:center"> {{this.question}}</span>
               <button class="btn btn-primary pull-left" data-action="answer" data-answer="{{this.options.[0]}}">{{this.options.[0]}}</button>
               <button class="btn btn-danger float-right" data-action="answer" data-answer="{{this.options.[1]}}">{{this.options.[1]}}</button>
             </div>
@@ -80,7 +80,7 @@
       <div class="row">
           <div class="col">
             <div>
-              <span style="text-align:center"> {{this.questionText}} </span>
+              <span style="text-align:center"> {{this.question}} </span>
               <input type="text" id="{{this.answerFieldId}}" name="answer"><br><br>
               <button class="btn btn-danger float-right" data-action="submit">Submit</button>
             </div>
