@@ -47,11 +47,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   
+  
 });
 
- const fetch_info = async () => {
+ const fetch_info = async (user_idx) => {
   const data = await fetch("https://my-json-server.typicode.com/Tylerl123/Project3/db")
-  const result = await data.json()
+  const model = await data.json()
+  const html_element = render_widget(model, '#question_view_true_false')
+  document.querySelector("#widget_view").innerHTML = html_element;
  
   
   }
@@ -95,7 +98,7 @@ function handle_widget_event(e) {
    }
 
    // Handle answer event for  text questions.
-   if (appState.current_view == "#question_view_text_input") {
+   if (appState.current_view == "#question_input_text") {
        if (e.target.dataset.action == "submit") {
      
            user_response = document.querySelector(`#${appState.current_model.answerFieldId}`).value;
@@ -126,7 +129,7 @@ function handle_widget_event(e) {
 
 
 function check_user_response(user_answer, model) {
-  if (user_answer == model.correctAnswer) {
+  if (user_answer == model.correct_answer) {
     return true;
   }
   return false;
@@ -149,10 +152,10 @@ function setQuestionView(appState) {
     return
   }
 
-  if (appState.current_model.questionType == "true_false")
+  if (appState.current_model.question_type == "question_view_true_false")
     appState.current_view = "#question_view_true_false";
-  else if (appState.current_model.questionType == "text_input") {
-    appState.current_view = "#question_view_text_input";
+  else if (appState.current_model.question_type == "question_input_text") {
+    appState.current_view = "#question_input_text";
   }
 }
 
@@ -168,9 +171,12 @@ const render_widget = (model,view) => {
   template_source = document.querySelector(view).innerHTML
   // Handlebars compiles the above source into a template
   var template = Handlebars.compile(template_source);
+  
+  console.log(model)
 
   // apply the model to the template.
   var html_widget_element = template({...model,...appState})
 
+  
   return html_widget_element
 }
