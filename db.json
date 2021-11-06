@@ -49,7 +49,7 @@
       {
          "id":4,
          "question":"In Javascript, == checks for the equality in variable types and === checks for equality in variable values.",
-         "question_type":"question_trueFalse",
+         "question_type":"question_view_true_false",
          "correct_answer":"False",
          "choices":[
             "True",
@@ -95,7 +95,7 @@
       {
          "id":7,
          "question":"The process of wrapping up data and functions into a single unit is called Polymorphism.",
-         "question_type":"question_trueFalse",
+         "question_type":"question_view_true_false",
          "correct_answer":"False",
          "choices":[
             "True",
@@ -273,7 +273,7 @@
       {
          "id":18,
          "question":"In Java, without any class instances, a non-static method can be called by a static method.",
-         "question_type":"question_trueFalse",
+         "question_type":"question_view_true_false",
          "correct_answer":"False",
          "choices":[
             "True",
