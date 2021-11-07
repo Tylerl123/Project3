@@ -1,16 +1,5 @@
 const questions = [
-  {
-    questionType : "true_false",
-    questionText : "The earth is round",
-    correctAnswer : "true",
-    options : ["true", "false"],
-  },
-  {
-    questionType : "text_input",
-    questionText : "What is the value of the expression 1+1",
-    correctAnswer : "2",
-    answerFieldId : "answer_to_question"
-  }
+  
 ]
 
 // appState, keep information about the State of the application.
@@ -152,9 +141,9 @@ function setQuestionView(appState) {
     return
   }
 
-  if (appState.current_model.question_type == "question_view_true_false")
+  if (appState.current_model.question_type == "true_false")
     appState.current_view = "#question_view_true_false";
-  else if (appState.current_model.question_type == "question_input_text") {
+  else if (appState.current_model.question_type == "input_text") {
     appState.current_view = "#question_input_text";
   }
 }
