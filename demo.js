@@ -3,7 +3,7 @@ const questions = [
 ]
 function quizes() {
   var quiz1 = document.getElementById("quiz1");
-  var quiz2 = document.getElementById("quiz2");
+  //var quiz2 = document.getElementById("quiz2");
 
   if(quiz1.checked==true)
     fetch("db.json")
