@@ -19,7 +19,7 @@
       {
          
          "question":"What is the number of primitive data types in Java?",
-         "question_type":"question_input_text",
+         "question_type":"input_text",
          "textFieldId":"user_answer",
          "correct_answer":"8",
         
