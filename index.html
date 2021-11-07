@@ -90,6 +90,35 @@
         </div>
       </div>
   </script>
+  
+  <script id="mult_select_choice" type="text/x-handlebars-template">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+         
+        </div>
+      </div>
+      <div >
+        <h2 id="question">{{this.question}}</h2>
+        <div >
+          <p >A</p>
+          <button class="button-label" id="choice" name="choice" data-action="answer" data-answer="{{this.options.[0]}}">{{this.options.[0]}}</button>
+        </div>
+        <div >
+          <p >B</p>
+          <button class="button-label" id="choice" name="choice" data-action="answer" data-answer="{{this.options.[1]}}">{{this.options.[1]}}</button>
+        </div>
+        <div >
+          <p >C</p>
+          <button class="button-label" id="choice" name="choice" data-action="answer" data-answer="{{this.options.[2]}}">{{this.options.[2]}}</button>
+        </div>
+        <div >
+          <p >D</p>
+          <button class="button-label" id="choice" name="choice" data-action="answer" data-answer="{{this.options.[3]}}">{{this.options.[3]}}</button>
+        </div>
+      </div>
+    </div>
+  </script>
 
   <script id="feedback_view" type="text/x-handlebars-template">
     <div class="container">
