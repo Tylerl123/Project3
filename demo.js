@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
  const fetch_info = async (user_idx) => {
   const data = await fetch("https://my-json-server.typicode.com/Tylerl123/Project3/db")
   const model = await data.json()
-  const html_element = render_widget(model, '#question_view_true_false')
+  const html_element = render_widget(model, '#intro_view')
   document.querySelector("#widget_view").innerHTML = html_element;
  
   
