@@ -116,28 +116,6 @@
       ]
    },
    {
-      "question":"In Python, which of the following operators are used for floor division?",
-      "question_type":"mult_choice_text",
-      "correct_answer":"//",
-      "choices":[
-         "%",
-         ".floor()",
-         "/",
-         "//"
-      ]
-   },
-   {
-      "question":"Which of the following data structures prohibit repeated elements?",
-      "question_type":"mult_choice_text",
-      "correct_answer":"Set",
-      "choices":[
-         "ArrayList",
-         "List",
-         "Set",
-         "Binary Tree"
-      ]
-   },
-   {
       "question":"Select the data structures that are considered as non-linear data structures.",
       "question_type":"mult_select_choice",
       "correct_answers":[
@@ -194,26 +172,5 @@
          "False"
       ]
    },
-   {
-      "question":"What would be cause for an ArrayIndexOutOfBounds exception?",
-      "question_type":"mult_choice_text",
-      "correct_answer":"Accessing an array with an illegal index",
-      "choices":[
-         "Referencing an array that doesn't exist",
-         "Adding additional indexes to an array",
-         "Accessing an array with an illegal index",
-         "All of the above"
-      ]
-   },
-   {
-      "question":"Which of the following sorting algorithms have the worst time complexity in the worst case scenario?",
-      "question_type":"mult_choice_text",
-      "correct_answer":"Bubble Sort",
-      "choices":[
-         "Merge Sort",
-         "Bubble Sort",
-         "Quick Sort",
-         "Heap Sort"
-      ]
-   }
+
 ]
