@@ -54,9 +54,17 @@
               <label for="lname">Last name:</label><br>
               <input type="text" id="lname" name="lname" value=""><br><br>
               
-              </form> 
+              </form>
+              <button id="submit-btn" onclick="quizes() " data-action="{{this.action}}">{{this.action}}</button> 
+              <form>
+                <label for="quiz">Choose a quiz</label>
+                <select id="quiz" >
+                <option value="quiz1">Quiz 1</option>
+                <option value="quiz2">Quiz 2</option>
+                </select>
+              </form>
               
-              <button class="btn btn-danger float-right" data-action="{{this.action}}">{{this.action}}</button>
+             
             </div>
           </div>
         </div>
