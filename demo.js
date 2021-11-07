@@ -1,7 +1,22 @@
 const questions = [
   
 ]
+function quizes() {
+  var quiz1 = document.getElementById("quiz1");
+  var quiz2 = document.getElementById("quiz2");
 
+  if(quiz1.checked==true)
+    fetch("db.json")
+      .then( res => {
+        console.log(res);
+        return res.json();
+        }).then(loaded_questions => {
+          console.log(loaded_questions);
+          questions = loaded_questions;
+        })
+        .catch(err=>{
+          console.error(err);
+        });
 // appState, keep information about the State of the application.
 const appState = {
     current_view : "#intro_view",
@@ -17,9 +32,9 @@ const appState = {
 //
 
 document.addEventListener('DOMContentLoaded', () => {
-  
+  /*
   fetch_info(1);
-  
+  */
   // Set the state
   appState.current_view =  "#intro_view";
   appState.current_model = {
@@ -38,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   
 });
-
+/*
  const fetch_info = async (user_idx) => {
   const data = await fetch("https://my-json-server.typicode.com/Tylerl123/Project3/db")
   const model = await data.json()
@@ -47,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
  
   
   }
-
+*/
 function handle_widget_event(e) {
 
   if (appState.current_view == "#intro_view"){
