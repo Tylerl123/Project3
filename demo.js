@@ -312,7 +312,7 @@ function setQuestionView(appState) {
 }
 
 function updateScoreHud(appState) {
-  document.querySelector("#questions_answered").querySelector("p").innerHTML = `Questions: ${appState.answered_questions}`;
+  document.querySelector("#comppleted").querySelector("p").innerHTML = `Questions: ${appState.answered_questions}`;
   var accuracy = Math.floor((appState.current_score / appState.answered_questions) * 100);
   document.querySelector("#current_score").querySelector("p").innerHTML = `Score: ${accuracy} %`;
 }
