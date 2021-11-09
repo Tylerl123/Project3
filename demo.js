@@ -73,7 +73,7 @@ function click() {
   var quiz = document.getElementById("quiz");
   var quiz2 = document.getElementById("quiz2");
 
-  if (quiz1.checked == true)
+  if (quiz.checked == true)
     fetch("quiz.json")
       .then(res => {
         console.log(res);
