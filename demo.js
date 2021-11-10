@@ -14,7 +14,7 @@ let displayHours = 0;
 let interval = null;
 let status = "stopped";
 
-function clock() {
+function timer() {
   seconds++;
   if (seconds / 60 === 1) {
     seconds = 0;
@@ -45,13 +45,13 @@ function clock() {
   else {
     displayHours = hours;
   }
-  document.getElementById("clock").innerHTML = displayHours + ":" + displayMinutes + ":" + displaySeconds;
+  document.getElementById("timer").innerHTML = displayHours + ":" + displayMinutes + ":" + displaySeconds;
 }
 
 function startstopClock(){
 
   if(status === "stopped"){
-      interval = window.setInterval(clock, 1000);
+      interval = window.setInterval(timer, 1000);
       status = "started";
   }
   else{
@@ -65,7 +65,7 @@ function resetClock(){
   seconds = 0;
   minutes = 0;
   hours = 0;
-  document.getElementById("clock").innerHTML = "00:00:00";
+  document.getElementById("timer").innerHTML = "00:00:00";
   document.getElementById("startStopClock").innerHTML = "Start";
 }
 
