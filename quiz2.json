@@ -145,27 +145,27 @@
   },
   {
     "questionType": "dropdown_selection",
-    "questionInfo": "What is called when a function is defined inside a class?",
-    "correctAnswer": "Method",
+    "questionInfo": "Which is not considered a value syntax?",
+    "correctAnswer": "high",
     "answerFieldId": "answer_to_question",
     "options": [
-      "class",
-      "package",
-      "Array",
-      "Method"
+      "int",
+      "string",
+      "double",
+      "high"
     ],
-    "reason":"functions are defined in a method whether it is public or private"
+    "reason":"high is not a type of value syntax"
   },
   {
     "questionType": "text_input",
-    "questionInfo": "What is the computer system?",
-    "correctAnswer": "A computer system is a combination of memory, CPU, peripheral devices ",
+    "questionInfo": "Is Eclipse a java programming software?",
+    "correctAnswer": "Yes ",
     "answerFieldId": "answer_to_question",
-    "reason": "A computer system is a combination of memory, CPU, peripheral devices that are connected to it, and OS (Operating System)."
+    "reason": "Eclipse is a java programming software that is used at St.johns"
   },
   {
     "questionType": "true_false",
-    "questionInfo": "Python is the same a java in programming language",
+    "questionInfo": "In Java you could use the same syntax as python",
     "correctAnswer": "False",
     "options": [
       "True",
@@ -182,22 +182,22 @@
   },
   {
     "questionType": "multiple_choice",
-    "questionInfo": " The ‘P’ in CPU stands for …",
-    "correctAnswer": " Process",
+    "questionInfo": " Which is not a programming language",
+    "correctAnswer": " Space",
     "options": [
-      " Process",
-      "Program",
-      "Performance",
-      "Plan"
+      " Java",
+      "Space",
+      "JavaScript",
+      "html"
     ],
-    "reason": "CPU stands for central process unit"
+    "reason": "Space is not consider to be a programming language"
   },
   {
     "questionType": "text_input",
-    "questionInfo": " What is a class?",
-    "correctAnswer": "A class is a blueprint from which objects are created.",
+    "questionInfo": " what is the syntax to import a scanner?",
+    "correctAnswer": "import java.util.scanner;",
     "answerFieldId": "answer_to_question",
-    "reason": "A class is a blueprint from which objects are created. A class contains methods and variables associated with an instance of a class."
+    "reason": "This is the syntax to import a scanner import java.util.scanner;"
   },
   {
     "questionType": "true_false",
