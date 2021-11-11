@@ -27,8 +27,7 @@ function f1() {
       }).then(loaded_questions => { console.log(loaded_questions);
         questions = loaded_questions;
       })
-      .catch(err => {
-        console.error(err);
+      .catch(err => { console.error(err);
       });
   else if (quiz2.checked == true)
     fetch("quiz2.json")
@@ -37,8 +36,7 @@ function f1() {
       }).then(loaded_questions => { console.log(loaded_questions);
         questions = loaded_questions;
       })
-      .catch(err => {
-        console.error(err);
+      .catch(err => { console.error(err);
       });
   else
     alert("Please select a quiz inorder to continue");
