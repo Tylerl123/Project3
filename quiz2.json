@@ -1,0 +1,212 @@
+[
+  {
+    "questionType": "multiple_choice",
+    "questionInfo": "Which of the following is/are the levels of implementation of data structure?",
+    "correctAnswer": "All of the above",
+    "options": [
+      "Abstract level",
+      "Application level",
+      "Implementation level",
+      "All of the above"
+    ],
+    "reason":"All are levels that are apart of data stuctures"
+  },
+  {
+    "questionType": "dropdown_selection",
+    "questionInfo": "……………….. level is where the model becomes compatible executable code.",
+    "correctAnswer": "Implementation level",
+    "answerFieldId": "answer_to_question",
+    "options": [
+      "Application level",
+      "Implementation level",
+      "Abstract level",
+      "Error"
+    ],
+    "reason":"Implementation level is where the model becomes compatible executable code."
+  },
+  {
+    "questionType": "multiple_choice",
+    "questionInfo": "…………… is not the component of data structure.",
+    "correctAnswer": "None of the above",
+    "options": [
+      "Virus",
+      "Storage Structures",
+      "Algorithms",
+      "None of the above"
+    ],
+    "reason":"All are consider to be a data stucture"
+  },
+  {
+    "questionType": "true_false",
+    "questionInfo": "Python was the first programming language ever created?",
+    "correctAnswer": "False",
+    "options": [
+      "True",
+      "False"
+    ],
+    "reason": "Python was not the first programming language"
+  },  
+  {
+    "questionType": "true_false",
+    "questionInfo": "Method do need to be put into the main inorder to print its info",
+    "correctAnswer": "True",
+    "options": [
+      "True",
+      "False"
+    ],
+    "reason": "Methods must be put into the main for you to get a output if not there would be no output"
+  },
+  {
+    "questionType": "image_selection",
+    "questionInfo": "What is the java symbol?",
+    "correctAnswer": "https://1000logos.net/wp-content/uploads/2020/09/Java-Emblem.jpg",
+    "options": [
+      "data:image/png;base64,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",
+      "data:image/png;base64,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",
+      "https://1000logos.net/wp-content/uploads/2020/09/Java-Emblem.jpg",
+      "https://cdn4.vectorstock.com/i/1000x1000/89/78/java-computer-symbol-vector-11238978.jpg"
+    ],
+    "reason": "Visit a java website where you will see their logo"
+  },
+  {
+    "questionType": "multiple_choice",
+    "questionInfo": "Which of the following is not the part of ADT description?",
+    "correctAnswer": "None of the above",
+    "options": [
+      "Data",
+      "Cold boot",
+      "Both choices,
+      "None of the above"
+    ],
+    "reason":"None are considered to be a ADT decription"
+  },
+  {
+    "questionType": "true_false",
+    "questionInfo": "A array doesnt have a fix list",
+    "correctAnswer": "False",
+    "options": [
+      "True",
+      "False"
+    ],
+    "reason": "Array is assign a fix list in the beginning of a program"
+  },
+  {
+    "questionType": "image_selection",
+    "questionInfo": "Which of these symbols is not dealing with computer science ",
+    "correctAnswer": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Biohazard_symbol.svg/2048px-Biohazard_symbol.svg.png",
+    "options": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Biohazard_symbol.svg/2048px-Biohazard_symbol.svg.png",
+      "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+      "https://1000logos.net/wp-content/uploads/2020/08/Python-Emblem.jpg",
+      "https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.jpg"
+    ],
+    "reason": "This symbol is for contamination not computer science"
+  },
+  {
+    "questionType": "text_input",
+    "questionInfo": " How are computer models tested in order to determine whether or not they are valid?",
+    "correctAnswer": "Computer models are tested by examining the model structure, i.e., the algorithms and relationship, to see how closely it corresponds to the actual system definition. ",
+    "answerFieldId": "answer_to_question",
+    "reason": "Computer models are tested by examining the model structure, i.e., the algorithms and relationship, to see how closely it corresponds to the actual system definition. If the model is an accurate representation of the actual system, it is considered to be valid. The person can use different validating techniques like resubstitution, hold-out, LOOCV, random subsampling, bootstrapping."
+  },
+  {
+    "questionType": "true_false",
+    "questionInfo": "Python is a type of programming language",
+    "correctAnswer": "True",
+    "options": [
+      "True",
+      "False"
+    ],
+    "reason":"Python is a programing language use for over 5 years"
+  },
+  {
+    "questionType": "multiple_choice",
+    "questionInfo": "Which among the following correctly defines the term cookie?",
+    "correctAnswer": "It is a message given to a web browser by a web server",
+    "options": [
+      "It is a message given to a web browser by a web server",
+      "It is a password stored by web server",
+      "It is virus that corrupts other web file",
+      "It is intentionally created deceptive message that collects user’s personal information"
+    ],
+    "reason": "The browser stores the message (i.e. cookie) in a text file."
+  },
+  {
+    "questionType": "multiple_choice",
+    "questionInfo": "Which is following is used to escape out of full screen",
+    "correctAnswer": " ESC",
+    "options": [
+      "F5",
+      "F11",
+      "F10",
+      "ESC"
+    ],
+    "reason": "To exit the full screen again need to press F11."
+  },
+  {
+    "questionType": "dropdown_selection",
+    "questionInfo": "What is called when a function is defined inside a class?",
+    "correctAnswer": "Method",
+    "answerFieldId": "answer_to_question",
+    "options": [
+      "class",
+      "package",
+      "Array",
+      "Method"
+    ],
+    "reason":"functions are defined in a method whether it is public or private"
+  },
+  {
+    "questionType": "text_input",
+    "questionInfo": "What is the computer system?",
+    "correctAnswer": "A computer system is a combination of memory, CPU, peripheral devices ",
+    "answerFieldId": "answer_to_question",
+    "reason": "A computer system is a combination of memory, CPU, peripheral devices that are connected to it, and OS (Operating System)."
+  },
+  {
+    "questionType": "true_false",
+    "questionInfo": "Python is the same a java in programming language",
+    "correctAnswer": "False",
+    "options": [
+      "True",
+      "False"
+    ],
+    "reason":"Python is a different programming language than java"
+  },
+  {
+    "questionType": "text_input",
+    "questionInfo": "What is a file?",
+    "correctAnswer": "A file is a named location which stores data or information permanently.",
+    "answerFieldId": "answer_to_question",
+    "reason":"A file is a named location which stores data or information permanently. A file is always stored inside a storage device using file name (e.g. STUDENT.MARKS). A file name normally has primary and secondary name separated by a “.”(DOT)."
+  },
+  {
+    "questionType": "multiple_choice",
+    "questionInfo": " The ‘P’ in CPU stands for …",
+    "correctAnswer": " Process",
+    "options": [
+      " Process",
+      "Program",
+      "Performance",
+      "Plan"
+    ],
+    "reason": "CPU stands for central process unit"
+  },
+  {
+    "questionType": "text_input",
+    "questionInfo": " What is a class?",
+    "correctAnswer": "A class is a blueprint from which objects are created.",
+    "answerFieldId": "answer_to_question",
+    "reason": "A class is a blueprint from which objects are created. A class contains methods and variables associated with an instance of a class."
+  },
+  {
+    "questionType": "true_false",
+    "questioninfo": "Cs stands for computer science",
+    "correctAnswer": "True",
+    "options": [
+      "True",
+      "False"
+    ],
+    "reason":"Computer science was given the nickname cs"
+  }
+]
