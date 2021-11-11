@@ -201,8 +201,8 @@
   },
   {
     "questionType": "true_false",
-    "questioninfo": "Cs stands for computer science",
-    "correctAnswer": "True",
+    "questioninfo": "Cs doesnt stands for computer science",
+    "correctAnswer": "False",
     "options": [
       "True",
       "False"
