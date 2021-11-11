@@ -12,7 +12,7 @@
     "reason":"All are levels that are apart of data stuctures"
   },
   {
-    "questionType": "dropdown_selection",
+    "questionType": "multiple_list",
     "questionInfo": "……………….. level is where the model becomes compatible executable code.",
     "correctAnswer": "Implementation level",
     "answerFieldId": "answer_to_question",
@@ -57,7 +57,7 @@
     "reason": "Methods must be put into the main for you to get a output if not there would be no output"
   },
   {
-    "questionType": "image_selection",
+    "questionType": "image_choices",
     "questionInfo": "What is the java symbol?",
     "correctAnswer": "https://1000logos.net/wp-content/uploads/2020/09/Java-Emblem.jpg",
     "options": [
@@ -91,7 +91,7 @@
     "reason": "Array is assign a fix list in the beginning of a program"
   },
   {
-    "questionType": "image_selection",
+    "questionType": "image_choices",
     "questionInfo": "Which of these symbols is not dealing with computer science ",
     "correctAnswer": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Biohazard_symbol.svg/2048px-Biohazard_symbol.svg.png",
     "options": [
@@ -144,7 +144,7 @@
     "reason": "To exit the full screen again need to press F11."
   },
   {
-    "questionType": "dropdown_selection",
+    "questionType": "multiple_list",
     "questionInfo": "Which is not considered a value syntax?",
     "correctAnswer": "high",
     "answerFieldId": "answer_to_question",
