@@ -19,17 +19,17 @@
   <div >
     <div>
       <div id="comppleted">
-        <p class="hud-prefix"></p>
+        <p ></p>
       </div>
     </div>
-    <div id="hud-item" style="text-align: center;">
-      <div class="hud-prefix" id="timer">
+    <div style="text-align: center;">
+      <div id="timer">
         00:00:00
       </div>
     </div>
     <div >
       <div id="currentGrade">
-        <p class="hud-prefix"></p>
+        <p></p>
       </div>
     </div>
   </div>
@@ -44,7 +44,7 @@
       <h1> CUS Quiz </h1>
     </div>
       <div >
-          <label> Please enter First and Last Name: </label> <input id = "name" placeholder="Please type enter a name" type="text">
+          <label> Please enter First and Last Name: </label> <input id = "name" placeholder="Please type enter in your name" type="text">
           <button id="submit-btn" onclick="f1();startstopClock();" data-action="{{this.action}}">{{this.action}}</button>
       </div>
       <div >
@@ -60,6 +60,19 @@
         </label>
       </div>
     </div>
+  </script>
+ 
+ 
+ <script id="feedback_correct" type="text/x-handlebars-template">
+    <div class="container">
+      <div class="row">
+          <div class="col">
+            <div>
+              <h2> Correct </h2>
+            </div>
+          </div>
+        </div>
+      </div>
   </script>
 
   <script id="view_true_false" type="text/x-handlebars-template">
@@ -161,18 +174,6 @@
 
 
 
-
-<script id="feedback_correct" type="text/x-handlebars-template">
-    <div class="container">
-      <div class="row">
-          <div class="col">
-            <div>
-              <h2> Correct </h2>
-            </div>
-          </div>
-        </div>
-      </div>
-  </script>
 
 <script id="feedback_incorrect" type="text/x-handlebars-template">
     <div class="container">
