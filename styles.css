@@ -140,11 +140,11 @@ h2 {
 width:20%
 }
 
-#quiz1:checked + .button-label {
+#quiz:checked + .button-label {
   background: #ff2d50;
   color: #efefef;
 }
-#quiz1:checked + .button-label:hover {
+#quiz:checked + .button-label:hover {
   background: #ff2d50;
   color: #e2e2e2;
 }
