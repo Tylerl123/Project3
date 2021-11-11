@@ -22,11 +22,9 @@ function f1() {
 
   if (quiz.checked == true)
     fetch("quiz.json")
-      .then(res => {
-        console.log(res);
+      .then(res => { console.log(res);
         return res.json();
-      }).then(loaded_questions => {
-        console.log(loaded_questions);
+      }).then(loaded_questions => { console.log(loaded_questions);
         questions = loaded_questions;
       })
       .catch(err => {
@@ -34,11 +32,9 @@ function f1() {
       });
   else if (quiz2.checked == true)
     fetch("quiz2.json")
-      .then(res => {
-        console.log(res);
+      .then(res => { console.log(res);
         return res.json();
-      }).then(loaded_questions => {
-        console.log(loaded_questions);
+      }).then(loaded_questions => { console.log(loaded_questions);
         questions = loaded_questions;
       })
       .catch(err => {
