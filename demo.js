@@ -241,10 +241,10 @@ function handle_widget_event(e) {
     startstopClock();
     let grade = ((appState.currentGrade / appState.answered_questions) * 100);
     if (grade > 80) {
-      document.getElementById("finalMessage").innerHTML = "Your Grade is" + grade + "% <br> " + user + "Congrates You have passes the quiz";
+      document.getElementById("result").innerHTML = "Your Grade is" + grade + "% <br> " + user + "Congrates You have passes the quiz";
     }
     else {
-      document.getElementById("finalMessage").innerHTML = "Your Grade is " + grade + "% <br>" + user + " Sorry but you have failed the quiz, please try again";
+      document.getElementById("result").innerHTML = "Your Grade is " + grade + "% <br>" + user + " Sorry but you have failed the quiz, please try again";
     }
     if (e.target.dataset.action == "Start_Again") {
       appState.current_question = 0
