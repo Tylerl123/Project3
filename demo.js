@@ -1,4 +1,5 @@
-// appState, keep information about the State of the application.
+// the state of the application
+///////////////
 const appState = {
   current_view: "#intro_view",
   current_question: -1,
@@ -7,10 +8,14 @@ const appState = {
   answered_questions: 0
 }
 
-let questions = [];
+let questions = [
+
+];
+
 let user = "";
 
-
+//retieves the files that is json
+////////////
 function f1() {
   var quiz = document.getElementById("quiz");
   var quiz2 = document.getElementById("quiz2");
@@ -43,6 +48,8 @@ function f1() {
     alert("Please select a quiz inorder to continue");
   return false;
 }
+//sets the intial values for timer
+//////////////
 
 let seconds = 0;
 let minutes = 0;
@@ -53,6 +60,8 @@ let displayHours = 0;
 let interval = null;
 let status = "stopped";
 
+//sets the function of the timer
+/////////
 function timer() {
   seconds++;
   if (seconds / 60 === 1) {
@@ -86,6 +95,8 @@ function timer() {
   }
   document.getElementById("timer").innerHTML = displayHours + ":" + displayMinutes + ":" + displaySeconds;
 }
+//this set a function to reset the clock
+///////////
 
 function resetClock(){
   window.clearInterval(interval);
@@ -95,6 +106,8 @@ function resetClock(){
   document.getElementById("timer").innerHTML = "00:00:00";
   document.getElementById("startStopClock").innerHTML = "Start";
 }
+//This function starts or stops the clock
+//////////////////////
 
 function startstopClock(){
 
@@ -115,9 +128,9 @@ function startstopClock(){
 
 
 
-//
-// start_app: begin the applications.
-//
+
+// start: begins the quiz.
+////////////////
 
 document.addEventListener('DOMContentLoaded', () => {
   // Set the state
@@ -125,11 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
   appState.current_model = {
     action: "Start"
   }
-  update_view(appState);
-
-  //
-  // EventDelegation - handle all events of the widget
-  //
+  update_view(appState); 
 
   document.querySelector("#widget_view").onclick = (e) => {
     handle_widget_event(e)
@@ -137,6 +146,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+//this deals with the different type of views
+/////////////////
 
 function handle_widget_event(e) {
 
@@ -159,7 +170,8 @@ function handle_widget_event(e) {
     }
   }
 
-
+  //deals with the image view
+  /////////////////
   if (appState.current_view == "#view_image_selection") {
     if (e.target.dataset.action == "answer") {
       user_response = e.target.dataset.answer;
@@ -168,14 +180,16 @@ function handle_widget_event(e) {
       check_user_response(user_response, appState.current_model)
     }
   }
-  
+  //deals with the text input view
+  /////////////////
    if (appState.current_view == "#view_text_input") {
     if (e.target.dataset.action == "submit") {
       user_response = document.querySelector(`#${appState.current_model.answerFieldId}`).value;
       check_user_response(user_response, appState.current_model)
     }
   }
-  
+  //deals with the multiple choice view
+  /////////////////
   if (appState.current_view == "#view_multiple_choice") {
 
     if (e.target.dataset.action == "answer") {
@@ -187,7 +201,8 @@ function handle_widget_event(e) {
   }
 
 
-  // Handle answer event for true/false questions.
+  // deals with true/false questions.
+  /////////////////
   if (appState.current_view == "#view_true_false") {
 
     if (e.target.dataset.action == "answer") {
@@ -198,12 +213,8 @@ function handle_widget_event(e) {
     }
   }
 
-
-  // Handle answer event for text questions.
- 
-
-
-  // Handle the answer for multiple correct. 
+  // deals with the multiple selection.
+  ///////////////////
   if (appState.current_view == "#view_multiple_selection") {
 
     if (e.target.dataset.action == "submit") {
@@ -213,8 +224,8 @@ function handle_widget_event(e) {
     }
   }
 
-  //Handle the answer for image selection
-  
+  //gives feed back if wrong
+ //////////////////// 
 
   if (appState.current_view == "#feedback_incorrect") {
     if (e.target.dataset.action == "next") {
@@ -224,7 +235,8 @@ function handle_widget_event(e) {
 
  
 
-  // Handle end_view.
+  // the final view being diplayed
+  ///////////////////
   if (appState.current_view == "#end_view") {
     startstopClock();
     let grade = ((appState.currentGrade / appState.answered_questions) * 100);
@@ -239,10 +251,8 @@ function handle_widget_event(e) {
       appState.currentGrade = 0
       appState.answered_questions = 0
       appState.current_model = questions[appState.current_question];
-      // process the appState, based on question type update appState.current_view
+     
       setQuestionView(appState);
-
-      // Now that the state is updated, update the view.
 
       update_view(appState);
       resetClock();
@@ -262,7 +272,10 @@ function handle_widget_event(e) {
     }
   }
 
-} // end of handle_widget_event
+} 
+
+//This sets each question type
+//////////////////
 
 function setQuestionView(appState) {
   if (appState.current_question == -2) {
@@ -286,6 +299,8 @@ function setQuestionView(appState) {
   }
 } 
 
+//This updates the question from the previous
+/////////////////
 function updateQuestion(appState) {
   if (appState.current_question < questions.length - 1) {
     appState.current_question = appState.current_question + 1;
@@ -299,6 +314,8 @@ function updateQuestion(appState) {
   update_view(appState);
 }
 
+//This checks the user answer if it is correct
+/////////////////
 function check_user_response(user_answer, model) {
   if (user_answer == model.correctAnswer) {
     appState.currentGrade++;
@@ -320,21 +337,24 @@ function check_user_response(user_answer, model) {
 
 
 
-
-
+//this updates the grade from 0
+/////////////////
 
 function updateGrade(appState) {
   document.querySelector("#comppleted").querySelector("p").innerHTML = `Questions: ${appState.answered_questions}`;
   var accuracy = Math.floor((appState.currentGrade / appState.answered_questions) * 100);
-  document.querySelector("#currentGrade").querySelector("p").innerHTML = `Score: ${accuracy} %`;
+  document.querySelector("#currentGrade").querySelector("p").innerHTML = `Grade: ${accuracy} %`;
 }
 
+//This update the overall view
+////////////////
 function update_view(appState) {
   const html_element = render_widget(appState.current_model, appState.current_view)
   document.querySelector("#widget_view").innerHTML = html_element;
 }
 
-
+//this deals with the template source
+/////////////////////
 const render_widget = (model, view) => {
   // Get the template HTML
   template_source = document.querySelector(view).innerHTML
@@ -346,4 +366,4 @@ const render_widget = (model, view) => {
 
   return html_widget_element
   
-}
+}     //end of js file
