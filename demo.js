@@ -2,10 +2,10 @@
 ///////////////
 const appState = {
   current_view: "#intro_view",
-  current_question: -1,
-  current_model: {},
   currentGrade: 0,
-  answered_questions: 0
+  current_question: -1,
+  answered_questions: 0,
+  current_model: {}
 }
 
 let questions = [
