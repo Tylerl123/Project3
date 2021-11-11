@@ -300,10 +300,10 @@ function setQuestionView(appState) {
   else if (appState.current_model.questionType == "text_input") {
     appState.current_view = "#view_text_input";
   }
-  else if (appState.current_model.questionType == "dropdown_selection") {
+  else if (appState.current_model.questionType == "multiple_list") {
     appState.current_view = "#view_multiple_selection";
   }
-  else if (appState.current_model.questionType == "image_selection") {
+  else if (appState.current_model.questionType == "image_choices") {
     appState.current_view = "#view_image_selection";
   }
 }
