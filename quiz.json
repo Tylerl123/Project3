@@ -12,7 +12,7 @@
     "reason":"Prolog is a general purpose logic programming language associated with artificial intelligence and computational linguistics"
   },
   {
-    "questionType": "dropdown_selection",
+    "questionType": "multiple_list",
     "questionInfo": "print '{0:.2}'.format(1.0 / 3)",
     "correctAnswer": "0.33",
     "answerFieldId": "answer_to_question",
@@ -57,7 +57,7 @@
     "reason": "Array list has an infinite amount of values in a list"
   },
   {
-    "questionType": "image_selection",
+    "questionType": "image_choices",
     "questionInfo": "What is the python symbol?",
     "correctAnswer": "https://1000logos.net/wp-content/uploads/2020/08/Python-Emblem.jpg",
     "options": [
@@ -91,7 +91,7 @@
     "reason": "Array is assign a fix list in the beginning of a program"
   },
   {
-    "questionType": "image_selection",
+    "questionType": "image_choices",
     "questionInfo": "What is the symbol for github",
     "correctAnswer": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
     "options": [
@@ -144,7 +144,7 @@
     "reason": "To exit the full screen again need to press F11."
   },
   {
-    "questionType": "dropdown_selection",
+    "questionType": "multiple_list",
     "questionInfo": "What is called when a function is defined inside a class?",
     "correctAnswer": "Method",
     "answerFieldId": "answer_to_question",
