@@ -1,212 +1,212 @@
 [
   {
     "questionType": "multiple_choice",
-    "questionInfo": "This In web design, what does CSS stand for?",
-    "correctAnswer": "Cascading Style Sheet",
+    "questionInfo": "Which of the following computer language is used for artificial intelligence?",
+    "correctAnswer": "PROLOG",
     "options": [
-      "Corrective Style Sheet",
-      "Cascading Style Sheet",
-      "Computer Style Sheet",
-      "Counter Strike: Source"
+      "FORTRAN",
+      "PROLOG",
+      "C",
+      "COBOL"
     ],
-    "reason":"CSS in web design stands for Cascading Style Sheet."
+    "reason":"Prolog is a general purpose logic programming language associated with artificial intelligence and computational linguistics"
   },
   {
     "questionType": "dropdown_selection",
-    "questionInfo": "In Java, to implement an interface method, it must be declared as _______",
-    "correctAnswer": "Public",
+    "questionInfo": "print '{0:.2}'.format(1.0 / 3)",
+    "correctAnswer": "0.33",
     "answerFieldId": "answer_to_question",
     "options": [
-      "Private",
-      "Public",
-      "Friend",
-      "Protected"
+      "0.333333",
+      "0.33",
+      " 0.333333:-2",
+      "Error"
     ],
-    "reason":" To implement an interface method in Java, it must be declared as Public."
+    "reason":".2 defines the precision of the floating point number."
   },
   {
     "questionType": "multiple_choice",
-    "questionInfo": "What does the computer software acronym JVM stand for?",
-    "correctAnswer": "Java Virtual Machine",
+    "questionInfo": "The malware that fetches the personal data such as bank details, credit/card details, password, etc. from remotely located computers is known as …",
+    "correctAnswer": "Trojans",
     "options": [
-      "Java Virtual Machine",
-      "Java Vendor Machine",
-      "Just Virtual Machine",
-      "Java Visual Machine"
+      "Virus",
+      "Worms",
+      "Trojans",
+      "Spyware"
     ],
-    "reason":"JVM stands for Java Virtual Machine."
+    "reason":"Through spyware, hacker records all the activities done on other targeted computers. Spyware records and transmits the data entered by using keyboards."
   },
   {
     "questionType": "true_false",
-    "questionInfo": "Anaconda is a programming language.",
+    "questionInfo": "Is the correct syntax for printing System.out.ln()",
     "correctAnswer": "False",
     "options": [
       "True",
       "False"
     ],
-    "reason": "Anaconda is not a programming language."
+    "reason": "Correct Syntax is System.out.println()"
   },  
   {
     "questionType": "true_false",
-    "questionInfo": "In Java, applets are embedded in another applications.",
+    "questionInfo": "An array list doesnt have a fix list",
     "correctAnswer": "True",
     "options": [
       "True",
       "False"
     ],
-    "reason": "Applets are embedded in another applications."
+    "reason": "Array list has an infinite amount of values in a list"
   },
   {
     "questionType": "image_selection",
-    "questionInfo": "What of these logos is a programming language?",
+    "questionInfo": "What is the python symbol?",
     "correctAnswer": "https://1000logos.net/wp-content/uploads/2020/08/Python-Emblem.jpg",
     "options": [
-      "https://d1.awsstatic.com/sdks-and-tools/eclipse%20icon%201.3778a4cbe978d8dfd73c091706e26aa6c57c65aa.jpeg",
-      "https://miro.medium.com/max/1200/1*N8Uwuj4le6YDIOrlrDhCtg.png",
-      "https://seeklogo.com/images/A/atom-logo-19BD90FF87-seeklogo.com.png",
-      "https://1000logos.net/wp-content/uploads/2020/08/Python-Emblem.jpg"
+      "https://1000logos.net/wp-content/uploads/2020/08/Python-Emblem.jpg",
+      "https://cdn-icons-png.flaticon.com/512/43/43287.png",
+      "https://www.pngitem.com/pimgs/m/159-1595877_python-logo-png-python-logo-transparent-png.png",
+      "https://cdn4.vectorstock.com/i/1000x1000/38/68/computer-laptop-and-science-symbols-vector-10113868.jpg"
     ],
-    "reason": "The 4th logo is the logo for Python."
+    "reason": "Visit the python website where you will see their logo"
   },
   {
     "questionType": "multiple_choice",
-    "questionInfo": "The programming language 'Swift' was created to replace what other programming language?",
-    "correctAnswer": "Objective-C",
+    "questionInfo": "If you restart your computer by switching it off (i.e. power cut), it is known as …",
+    "correctAnswer": "Cold boot",
     "options": [
-      "C#",
-      "Ruby",
-      "Objective-C",
-      "C++"
+      "Soft boot",
+      "Cold boot",
+      "Warm boot",
+      "A & C"
     ],
-    "reason":"Swift was created in order to replace Objective-C."
+    "reason":"Cold boot is also known as hard boot."
   },
   {
     "questionType": "true_false",
-    "questionInfo": "In Java, a class can inherit from multiple abstract classes.",
+    "questionInfo": "A array doesnt have a fix list",
     "correctAnswer": "False",
     "options": [
       "True",
       "False"
     ],
-    "reason": "Java classes cannot inherit from multiple abstract classes."
+    "reason": "Array is assign a fix list in the beginning of a program"
   },
   {
     "questionType": "image_selection",
-    "questionInfo": "What major programming language does Unreal Engine 4 use?",
-    "correctAnswer": "https://e7.pngegg.com/pngimages/46/626/png-clipart-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template.png",
+    "questionInfo": "What is the symbol for github",
+    "correctAnswer": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
     "options": [
-      "https://hwu71.github.io/photos/asm.png",
-      "https://e7.pngegg.com/pngimages/46/626/png-clipart-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template.png",
-      "https://raw.githubusercontent.com/wingsuitist/ecmascript-logo/master/es-ecmascript-logo.png",
-      "https://fwangzones.com/wp-content/uploads/2020/08/C.png"
+      "https://cdn1.vectorstock.com/i/1000x1000/34/95/computer-icon-pc-symbol-flat-vector-5383495.jpg",
+      "https://previews.123rf.com/images/karpenkoilia/karpenkoilia1801/karpenkoilia180100074/94431461-line-web-concept-for-computer-science-modern-linear-symbol-for-computer-programming-open-path-.jpg",
+      "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+      "https://toppng.com/uploads/preview/computer-science-png-women-symbol-in-science-11563256072vknz4kuy04.png"
     ],
-    "reason": "Unreal Engine uses C++."
+    "reason": "The symbol for github can be found on github.com"
   },
   {
     "questionType": "text_input",
-    "questionInfo": "What line of code would you use to print 'Hello' in Python?",
-    "correctAnswer": "print()",
+    "questionInfo": " How are computer models tested in order to determine whether or not they are valid?",
+    "correctAnswer": "Computer models are tested by examining the model structure, i.e., the algorithms and relationship, to see how closely it corresponds to the actual system definition. ",
     "answerFieldId": "answer_to_question",
-    "reason": "You would use the print() function to print Hello by doing print('Hello')"
+    "reason": "Computer models are tested by examining the model structure, i.e., the algorithms and relationship, to see how closely it corresponds to the actual system definition. If the model is an accurate representation of the actual system, it is considered to be valid. The person can use different validating techniques like resubstitution, hold-out, LOOCV, random subsampling, bootstrapping."
   },
   {
     "questionType": "true_false",
-    "questionInfo": "RAM stands for Random Access Memory.",
+    "questionInfo": "Java is a type of programming language",
     "correctAnswer": "True",
     "options": [
       "True",
       "False"
     ],
-    "reason":"RAM stands for Random Access Memory"
+    "reason":"Java is a program that is used for programing for over 30 years"
   },
   {
     "questionType": "multiple_choice",
-    "questionInfo": "In Java, what would be the output of: int l; System.out.println(l);",
-    "correctAnswer": "Length of array can be changed after creation of array",
+    "questionInfo": "Which among the following correctly defines the term cookie?",
+    "correctAnswer": "It is a message given to a web browser by a web server",
     "options": [
-      "Compile Error",
-      "L",
-      "Runtime Error",
-      "Garbage Value"
+      "It is a message given to a web browser by a web server",
+      "It is a password stored by web server",
+      "It is virus that corrupts other web file",
+      "It is intentionally created deceptive message that collects user’s personal information"
     ],
-    "reason": "Local variables of methods must be assigned a value to before they are accessed, or it will result in a compile error."
+    "reason": "The browser stores the message (i.e. cookie) in a text file."
   },
   {
     "questionType": "multiple_choice",
-    "questionInfo": "Which of the following is false about arrays in Java?",
-    "correctAnswer": "Length of array can be changed after creation of array",
+    "questionInfo": "Which among the following is the shortcut key to full screen the active window (basically web browser) in your computer system?",
+    "correctAnswer": " F11",
     "options": [
-      "Java arrays are always objects",
-      "Arrays in Java are always allocated on heap",
-      "The length of an array can be changed after its creation",
-      "None are correct."
+      "F5",
+      "F11",
+      "F10",
+      "Ctrl + L"
     ],
-    "reason": "In Java, arrays are objects and have members such as length. The length member is final and cannot be changed. All objects are allocated on heap in Java, so arrays are also allocated on heap."
+    "reason": "To exit the full screen again need to press F11."
   },
   {
     "questionType": "dropdown_selection",
-    "questionInfo": "When a function is defined inside a class in Python it is called a ______",
+    "questionInfo": "What is called when a function is defined inside a class?",
     "correctAnswer": "Method",
     "answerFieldId": "answer_to_question",
     "options": [
-      "Module",
-      "Another Function",
-      "Method",
-      "Class"
+      "class",
+      "package",
+      "Array",
+      "Method"
     ],
-    "reason":"In Python, when a function is defined inside it is called a method."
+    "reason":"functions are defined in a method whether it is public or private"
   },
   {
     "questionType": "text_input",
-    "questionInfo": "In Python, what is the output of '5*1**5'",
-    "correctAnswer": "5",
+    "questionInfo": "What is the computer system?",
+    "correctAnswer": "A computer system is a combination of memory, CPU, peripheral devices ",
     "answerFieldId": "answer_to_question",
-    "reason": "Precedence of ** is higher than that of 5, executing 1**5 first and multiplying the results by 5."
+    "reason": "A computer system is a combination of memory, CPU, peripheral devices that are connected to it, and OS (Operating System)."
   },
   {
     "questionType": "true_false",
-    "questionInfo": "time.time() returns the current time.",
+    "questionInfo": "Python is the same a java in programming language",
     "correctAnswer": "False",
     "options": [
       "True",
       "False"
     ],
-    "reason":"time.time() returns the current time in milliseconds since midnight, January 1, 1970 GMT"
+    "reason":"Python is a different programming language than java"
   },
   {
     "questionType": "text_input",
-    "questionInfo": "How many values does a boolean represent?",
-    "correctAnswer": "2",
+    "questionInfo": "What is a file?",
+    "correctAnswer": "A file is a named location which stores data or information permanently.",
     "answerFieldId": "answer_to_question",
-    "reason":"A boolean represents two possible values using being True or False."
+    "reason":"A file is a named location which stores data or information permanently. A file is always stored inside a storage device using file name (e.g. STUDENT.MARKS). A file name normally has primary and secondary name separated by a “.”(DOT)."
   },
   {
     "questionType": "multiple_choice",
-    "questionInfo": "  Which operating system was released first?",
-    "correctAnswer": "Mac OS",
+    "questionInfo": " The ‘P’ in CPU stands for …",
+    "correctAnswer": " Process",
     "options": [
-      "Windows",
-      "Mac OS",
-      "Linux",
-      "OS/2"
+      " Process",
+      "Program",
+      "Performance",
+      "Plan"
     ],
-    "reason": "Local variables of methods must be assigned a value to before they are accessed, or it will result in a compile error."
+    "reason": "CPU stands for central process unit"
   },
   {
     "questionType": "text_input",
-    "questionInfo": " What is the output of: print type(type(int))",
-    "correctAnswer": "type 'type'",
+    "questionInfo": " What is a class?",
+    "correctAnswer": "A class is a blueprint from which objects are created.",
     "answerFieldId": "answer_to_question",
-    "reason": "The type() function returns the class of the argument the object belongs to. Therefore type(int) returns which is of the type ‘type’ object."
+    "reason": "A class is a blueprint from which objects are created. A class contains methods and variables associated with an instance of a class."
   },
   {
     "questionType": "true_false",
-    "questioninfo": "HTML stands for Hypertext Markup Language.",
+    "questioninfo": "Cs stands for computer science",
     "correctAnswer": "True",
     "options": [
       "True",
       "False"
     ],
-    "reason":"HTML stands for Hypertext Markup Language."
+    "reason":"Computer science was given the nickname cs"
   }
 ]
