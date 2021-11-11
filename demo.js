@@ -66,7 +66,7 @@ function resetClock(){
   document.getElementById("startStopClock").innerHTML = "Start";
 }
 
-function click() {
+function f1() {
   var quiz = document.getElementById("quiz");
   var quiz2 = document.getElementById("quiz2");
 
