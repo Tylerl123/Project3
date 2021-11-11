@@ -1,7 +1,49 @@
+// appState, keep information about the State of the application.
+const appState = {
+  current_view: "#intro_view",
+  current_question: -1,
+  current_model: {},
+  currentGrade: 0,
+  answered_questions: 0
+}
+
 let questions = [];
 let user = "";
 
-/*Time Elapse Clock*/
+
+function f1() {
+  var quiz = document.getElementById("quiz");
+  var quiz2 = document.getElementById("quiz2");
+
+  if (quiz.checked == true)
+    fetch("quiz.json")
+      .then(res => {
+        console.log(res);
+        return res.json();
+      }).then(loaded_questions => {
+        console.log(loaded_questions);
+        questions = loaded_questions;
+      })
+      .catch(err => {
+        console.error(err);
+      });
+  else if (quiz2.checked == true)
+    fetch("quiz2.json")
+      .then(res => {
+        console.log(res);
+        return res.json();
+      }).then(loaded_questions => {
+        console.log(loaded_questions);
+        questions = loaded_questions;
+      })
+      .catch(err => {
+        console.error(err);
+      });
+  else
+    alert("Please select a quiz inorder to continue");
+  return false;
+}
+
 let seconds = 0;
 let minutes = 0;
 let hours = 0;
@@ -45,6 +87,15 @@ function timer() {
   document.getElementById("timer").innerHTML = displayHours + ":" + displayMinutes + ":" + displaySeconds;
 }
 
+function resetClock(){
+  window.clearInterval(interval);
+  seconds = 0;
+  minutes = 0;
+  hours = 0;
+  document.getElementById("timer").innerHTML = "00:00:00";
+  document.getElementById("startStopClock").innerHTML = "Start";
+}
+
 function startstopClock(){
 
   if(status === "stopped"){
@@ -57,57 +108,12 @@ function startstopClock(){
   }
 }
 
-function resetClock(){
-  window.clearInterval(interval);
-  seconds = 0;
-  minutes = 0;
-  hours = 0;
-  document.getElementById("timer").innerHTML = "00:00:00";
-  document.getElementById("startStopClock").innerHTML = "Start";
-}
-
-function f1() {
-  var quiz = document.getElementById("quiz");
-  var quiz2 = document.getElementById("quiz2");
-
-  if (quiz.checked == true)
-    fetch("quiz.json")
-      .then(res => {
-        console.log(res);
-        return res.json();
-      }).then(loaded_questions => {
-        console.log(loaded_questions);
-        questions = loaded_questions;
-      })
-      .catch(err => {
-        console.error(err);
-      });
-  else if (quiz2.checked == true)
-    fetch("quiz2.json")
-      .then(res => {
-        console.log(res);
-        return res.json();
-      }).then(loaded_questions => {
-        console.log(loaded_questions);
-        questions = loaded_questions;
-      })
-      .catch(err => {
-        console.error(err);
-      });
-  else
-    alert("Please select a quiz inorder to continue");
-  return false;
-}
 
 
-// appState, keep information about the State of the application.
-const appState = {
-  current_view: "#intro_view",
-  current_question: -1,
-  current_model: {},
-  currentGrade: 0,
-  answered_questions: 0
-}
+
+
+
+
 
 //
 // start_app: begin the applications.
@@ -154,6 +160,22 @@ function handle_widget_event(e) {
   }
 
 
+  if (appState.current_view == "#view_image_selection") {
+    if (e.target.dataset.action == "answer") {
+      user_response = e.target.dataset.answer;
+    }
+    if (e.target.dataset.action == "submit") {
+      check_user_response(user_response, appState.current_model)
+    }
+  }
+  
+   if (appState.current_view == "#view_text_input") {
+    if (e.target.dataset.action == "submit") {
+      user_response = document.querySelector(`#${appState.current_model.answerFieldId}`).value;
+      check_user_response(user_response, appState.current_model)
+    }
+  }
+  
   if (appState.current_view == "#view_multiple_choice") {
 
     if (e.target.dataset.action == "answer") {
@@ -178,12 +200,7 @@ function handle_widget_event(e) {
 
 
   // Handle answer event for text questions.
-  if (appState.current_view == "#view_text_input") {
-    if (e.target.dataset.action == "submit") {
-      user_response = document.querySelector(`#${appState.current_model.answerFieldId}`).value;
-      check_user_response(user_response, appState.current_model)
-    }
-  }
+ 
 
 
   // Handle the answer for multiple correct. 
@@ -197,14 +214,7 @@ function handle_widget_event(e) {
   }
 
   //Handle the answer for image selection
-  if (appState.current_view == "#view_image_selection") {
-    if (e.target.dataset.action == "answer") {
-      user_response = e.target.dataset.answer;
-    }
-    if (e.target.dataset.action == "submit") {
-      check_user_response(user_response, appState.current_model)
-    }
-  }
+  
 
   if (appState.current_view == "#feedback_incorrect") {
     if (e.target.dataset.action == "next") {
@@ -212,6 +222,7 @@ function handle_widget_event(e) {
     }
   }
 
+ 
 
   // Handle end_view.
   if (appState.current_view == "#end_view") {
@@ -253,39 +264,6 @@ function handle_widget_event(e) {
 
 } // end of handle_widget_event
 
-function check_user_response(user_answer, model) {
-  if (user_answer == model.correctAnswer) {
-    appState.currentGrade++;
-    document.querySelector("#widget_view").innerHTML = `
-    <div class="container">
-    <h2>Correct</h2>
-    </div>`
-    setTimeout(() => {
-      updateQuestion(appState);
-    }, 1000);
-  }
-  else {
-    appState.current_view = "#feedback_incorrect";
-    update_view(appState);
-  }
-  appState.answered_questions++;
-  updateGrade(appState);
-}
-
-
-function updateQuestion(appState) {
-  if (appState.current_question < questions.length - 1) {
-    appState.current_question = appState.current_question + 1;
-    appState.current_model = questions[appState.current_question];
-  }
-  else {
-    appState.current_question = -2;
-    appState.current_model = {};
-  }
-  setQuestionView(appState);
-  update_view(appState);
-}
-
 function setQuestionView(appState) {
   if (appState.current_question == -2) {
     appState.current_view = "#end_view";
@@ -306,7 +284,44 @@ function setQuestionView(appState) {
   else if (appState.current_model.questionType == "image_choices") {
     appState.current_view = "#view_image_selection";
   }
+} 
+
+function updateQuestion(appState) {
+  if (appState.current_question < questions.length - 1) {
+    appState.current_question = appState.current_question + 1;
+    appState.current_model = questions[appState.current_question];
+  }
+  else {
+    appState.current_question = -2;
+    appState.current_model = {};
+  }
+  setQuestionView(appState);
+  update_view(appState);
 }
+
+function check_user_response(user_answer, model) {
+  if (user_answer == model.correctAnswer) {
+    appState.currentGrade++;
+    document.querySelector("#widget_view").innerHTML = `
+    <div class="container">
+    <h2>Correct</h2>
+    </div>`
+    setTimeout(() => {
+      updateQuestion(appState);
+    }, 1000);
+  }
+  else {
+    appState.current_view = "#feedback_incorrect";
+    update_view(appState);
+  }
+  appState.answered_questions++;
+  updateGrade(appState);
+}
+
+
+
+
+
 
 function updateGrade(appState) {
   document.querySelector("#comppleted").querySelector("p").innerHTML = `Questions: ${appState.answered_questions}`;
