@@ -1,7 +1,4 @@
-let questions = [
-
-
-];
+let questions = [];
 let user = "";
 
 /*Time Elapse Clock*/
@@ -190,7 +187,7 @@ function handle_widget_event(e) {
 
 
   // Handle the answer for multiple correct. 
-  if (appState.current_view == "#view_dropdown_selection") {
+  if (appState.current_view == "#view_multiple_selection") {
 
     if (e.target.dataset.action == "submit") {
       var selectValue = document.getElementById("list").value;
@@ -304,7 +301,7 @@ function setQuestionView(appState) {
     appState.current_view = "#view_text_input";
   }
   else if (appState.current_model.questionType == "dropdown_selection") {
-    appState.current_view = "#view_dropdown_selection";
+    appState.current_view = "#view_multiple_selection";
   }
   else if (appState.current_model.questionType == "image_selection") {
     appState.current_view = "#view_image_selection";
