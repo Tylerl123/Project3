@@ -95,7 +95,7 @@ function f1() {
         console.error(err);
       });
   else
-    alert("You didnt select a quiz");
+    alert("Please select a quiz inorder to continue");
   return false;
 }
 
@@ -149,7 +149,7 @@ function handle_widget_event(e) {
 
       update_view(appState);
 
-      updateScoreHud(appState);
+      updateGrade(appState);
     }
   }
 
@@ -236,11 +236,11 @@ function handle_widget_event(e) {
       update_view(appState);
       resetClock();
       startstopClock();
-      updateScoreHud(appState)
+      updateGrade(appState)
 
     }
     if (e.target.dataset.action == "intro_page") {
-      appState.current_score = 0
+      appState.currentGrade = 0
       appState.answered_questions = 0
       appState.current_view = "#intro_view";
       appState.current_model = {
@@ -255,7 +255,7 @@ function handle_widget_event(e) {
 
 function check_user_response(user_answer, model) {
   if (user_answer == model.correctAnswer) {
-    appState.current_score++;
+    appState.currentGrade++;
     document.querySelector("#widget_view").innerHTML = `
     <div class="container">
     <h2>Correct</h2>
@@ -269,7 +269,7 @@ function check_user_response(user_answer, model) {
     update_view(appState);
   }
   appState.answered_questions++;
-  updateScoreHud(appState);
+  updateGrade(appState);
 }
 
 
@@ -308,10 +308,10 @@ function setQuestionView(appState) {
   }
 }
 
-function updateScoreHud(appState) {
+function updateGrade(appState) {
   document.querySelector("#comppleted").querySelector("p").innerHTML = `Questions: ${appState.answered_questions}`;
-  var accuracy = Math.floor((appState.current_score / appState.answered_questions) * 100);
-  document.querySelector("#current_score").querySelector("p").innerHTML = `Score: ${accuracy} %`;
+  var accuracy = Math.floor((appState.currentGrade / appState.answered_questions) * 100);
+  document.querySelector("#currentGrade").querySelector("p").innerHTML = `Score: ${accuracy} %`;
 }
 
 function update_view(appState) {
