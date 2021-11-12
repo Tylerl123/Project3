@@ -232,7 +232,7 @@ function handle_widget_event(e) {
   if (quizState.current_view == "#end_view") {
     startstopClock();
     let grade = ((quizState.currentGrade / quizState.answered_questions) * 100);
-    if (grade > 80) {
+    if (grade > 65) {
       document.getElementById("result").innerHTML = "Your Grade is" + grade + "% <br> " + user + "Congrates You have passes the quiz";
     }
     else {
