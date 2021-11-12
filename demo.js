@@ -171,7 +171,7 @@ function handle_widget_event(e) {
       user_response = e.target.dataset.answer;
     }
     if (e.target.dataset.action == "submit") {
-      check_user_response(user_response, appState.current_model)
+      check_answer(user_response, appState.current_model)
     }
   }
   //deals with the text input view
