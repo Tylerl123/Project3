@@ -179,7 +179,7 @@ function handle_widget_event(e) {
    if (appState.current_view == "#view_text_input") {
     if (e.target.dataset.action == "submit") {
       user_response = document.querySelector(`#${appState.current_model.answerFieldId}`).value;
-      check_user_response(user_response, appState.current_model)
+      check_answer(user_response, appState.current_model)
     }
   }
   //deals with the multiple choice view
@@ -190,7 +190,7 @@ function handle_widget_event(e) {
       user_response = e.target.dataset.answer;
     }
     if (e.target.dataset.action == "submit") {
-      check_user_response(user_response, appState.current_model)
+      check_answer(user_response, appState.current_model)
     }
   }
 
@@ -203,7 +203,7 @@ function handle_widget_event(e) {
       user_response = e.target.dataset.answer;
     }
     if (e.target.dataset.action == "submit") {
-      check_user_response(user_response, appState.current_model)
+      check_answer(user_response, appState.current_model)
     }
   }
 
@@ -214,7 +214,7 @@ function handle_widget_event(e) {
     if (e.target.dataset.action == "submit") {
       var selectValue = document.getElementById("list").value;
       user_response = selectValue
-      check_user_response(user_response, appState.current_model)
+      check_answer(user_response, appState.current_model)
     }
   }
 
@@ -310,7 +310,7 @@ function updateQuestion(appState) {
 
 //This checks the user answer if it is correct
 /////////////////
-function check_user_response(user_answer, model) {
+function check_answer(user_answer, model) {
   if (user_answer == model.correctAnswer) {
     appState.currentGrade++;
     document.querySelector("#widget_view").innerHTML = `
