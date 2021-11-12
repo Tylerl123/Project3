@@ -212,8 +212,8 @@ function handle_widget_event(e) {
   if (quizState.current_view == "#view_multiple_selection") {
 
     if (e.target.dataset.action == "submit") {
-      var selectValue = document.getElementById("list").value;
-      user_response = selectValue
+      var valueList = document.getElementById("list").value;
+      user_response = valueList
       check_answer(user_response, quizState.current_model)
     }
   }
@@ -336,8 +336,8 @@ function check_answer(user_answer, model) {
 
 function updateGrade(quizState) {
   document.querySelector("#comppleted").querySelector("p").innerHTML = `Questions: ${quizState.answered_questions}`;
-  var accuracy = Math.floor((quizState.currentGrade / quizState.answered_questions) * 100);
-  document.querySelector("#currentGrade").querySelector("p").innerHTML = `Grade: ${accuracy} %`;
+  var score = Math.floor((quizState.currentGrade / quizState.answered_questions) * 100);
+  document.querySelector("#currentGrade").querySelector("p").innerHTML = `Grade: ${score} %`;
 }
 
 //This update the overall view
