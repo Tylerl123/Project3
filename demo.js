@@ -356,7 +356,7 @@ const render_widget = (model, view) => {
   var template = Handlebars.compile(template_source);
 
   // apply the model to the template.
-  var html_widget_element = template({ ...model, ...appState })
+  var html_widget_element = template({ ...model, ...quizState })
 
   return html_widget_element
   
