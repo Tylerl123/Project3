@@ -148,15 +148,13 @@ function handle_widget_event(e) {
   if (quizState.current_view == "#intro_view") {
     if (e.target.dataset.action == "Start") {
 
-      // Update State (current model + state variables)
+    
       quizState.current_question = 0
       user = document.querySelector("#name").value;
 
       quizState.current_model = questions[quizState.current_question];
-      // process the appState, based on question type update appState.current_view
+     
       setQuestionView(quizState);
-
-      // Now that the state is updated, update the view.
 
       update_view(quizState);
 
@@ -168,18 +166,18 @@ function handle_widget_event(e) {
   /////////////////
   if (quizState.current_view == "#view_image_selection") {
     if (e.target.dataset.action == "answer") {
-      user_response = e.target.dataset.answer;
+      user_pick = e.target.dataset.answer;
     }
     if (e.target.dataset.action == "submit") {
-      check_answer(user_response, quizState.current_model)
+      check_answer(user_pick, quizState.current_model)
     }
   }
   //deals with the text input view
   /////////////////
    if (quizState.current_view == "#view_text_input") {
     if (e.target.dataset.action == "submit") {
-      user_response = document.querySelector(`#${quizState.current_model.answerFieldId}`).value;
-      check_answer(user_response, quizState.current_model)
+      user_pick = document.querySelector(`#${quizState.current_model.answerFieldId}`).value;
+      check_answer(user_pick, quizState.current_model)
     }
   }
   //deals with the multiple choice view
@@ -187,10 +185,10 @@ function handle_widget_event(e) {
   if (quizState.current_view == "#view_multiple_choice") {
 
     if (e.target.dataset.action == "answer") {
-      user_response = e.target.dataset.answer;
+      user_pick = e.target.dataset.answer;
     }
     if (e.target.dataset.action == "submit") {
-      check_answer(user_response, quizState.current_model)
+      check_answer(user_pick, quizState.current_model)
     }
   }
 
@@ -200,10 +198,10 @@ function handle_widget_event(e) {
   if (quizState.current_view == "#view_true_false") {
 
     if (e.target.dataset.action == "answer") {
-      user_response = e.target.dataset.answer;
+      user_pick = e.target.dataset.answer;
     }
     if (e.target.dataset.action == "submit") {
-      check_answer(user_response, quizState.current_model)
+      check_answer(user_pick, quizState.current_model)
     }
   }
 
@@ -213,8 +211,8 @@ function handle_widget_event(e) {
 
     if (e.target.dataset.action == "submit") {
       var valueList = document.getElementById("list").value;
-      user_response = valueList
-      check_answer(user_response, quizState.current_model)
+      user_pick = valueList
+      check_answer(user_pick, quizState.current_model)
     }
   }
 
